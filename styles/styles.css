@@ -1,0 +1,145 @@
+/* Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 99%);
+  padding: 5rem 2rem;
+  font-size: 16px;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#content #reliable h1 {
+  margin: 1px;
+  font-weight: 200;
+  color: rgb(158, 158, 158);
+}
+
+#content #powered h2 {
+  margin: 1px;
+  font-weight: 600;
+  font-size: 2rem;
+  color: rgb(97, 96, 96);
+}
+
+#content #artificial p {
+  color: rgb(133, 133, 133);
+  font-weight: 200;
+  text-align: center;
+}
+
+#content #card {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+#content #card .cards {
+  box-shadow: 0 0 8px 0 rgb(180, 179, 179);
+}
+
+#content #card .cards {
+  padding: 1.5rem;
+  /* border: 1px solid black; */
+  border-radius: 6px;
+}
+
+#content #card .cards p.title {
+  font-weight: 600;
+  color: rgb(97, 96, 96);
+}
+
+#content #card .cards p.text {
+  font-weight: 200;
+  color: rgb(158, 158, 158);
+}
+
+#content #card #card1 {
+  height: 12rem;
+  margin-top: 10rem;
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+#content #card #flexbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.7em;
+}
+
+#content #card #card2 {
+  height: 12rem;
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+#content #card #card3 {
+  height: 12rem;
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+#content #card #card4 {
+  height: 12rem;
+  margin-top: 10rem;
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+#content #card .cards p img.picture {
+  margin: 1rem 0 0 0;
+  float: right;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  text-align: center;
+  text-decoration: none;
+  color: rgb(133, 133, 133);
+}
+
+.attribution a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+/* Mobile Devices */
+@media screen and (min-width: 320px) and (max-width: 800px) {
+  body {
+    padding: 2rem 1rem;
+  }
+
+  #content #reliable h1 {
+    white-space: nowrap;
+    font-size: 1.5rem;
+  }
+
+  #content #powered h2 {
+    font-size: 1.6rem;
+    white-space: nowrap;
+  }
+
+  #content #card {
+    flex-direction: column;
+  }
+
+  #content #card #card1 {
+    margin-top: 1rem;
+  }
+
+  #content #card #card4 {
+    margin-top: 1rem;
+  }
+
+  #content #card .cards p img.picture {
+    margin: 0.5rem 0 0 0;
+    width: 55px;
+    height: 55px;
+  }
+}
